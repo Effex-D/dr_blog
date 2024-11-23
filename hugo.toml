@@ -1,7 +1,7 @@
 title = "Patched Atlas"
 subtitle = "The journey starts with a single hack"
 theme = "nightfall"
-baseURL = ""
+baseURL = "https://patched-atlas.fyi/"
 
 [menu]
   [[menu.header]]
