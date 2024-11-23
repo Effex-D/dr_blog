@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Linux Cheatsheet | Darren Richardson
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2011-11-29-linux-cheatsheet/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Linux Cheatsheet</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2011-11-29">November 29, 2011</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>3 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h3 id="navigation-and-file-management">Navigation and File Management:</h3>
+<ol>
+<li><strong>ls</strong> - List directory contents (<code>-l</code> for long format, <code>-a</code> for all files including hidden)</li>
+<li><strong>cd</strong> - Change directory (<code>..</code> for parent directory, <code>~</code> for home directory)</li>
+<li><strong>pwd</strong> - Print working directory</li>
+<li><strong>mkdir</strong> - Create a directory (<code>-p</code> to create parent directories)</li>
+<li><strong>rmdir</strong> - Remove an empty directory</li>
+<li><strong>rm</strong> - Remove files or directories (<code>-r</code> for recursive, <code>-f</code> for force)</li>
+<li><strong>cp</strong> - Copy files or directories (<code>-r</code> for recursive, <code>-i</code> for interactive)</li>
+<li><strong>mv</strong> - Move or rename files or directories</li>
+<li><strong>touch</strong> - Create an empty file or update file timestamps</li>
+<li><strong>find</strong> - Search for files in a directory hierarchy (<code>-name</code> for specifying filenames)</li>
+</ol>
+<h3 id="file-viewing-and-editing">File Viewing and Editing:</h3>
+<ol>
+<li><strong>cat</strong> - Concatenate and display file content</li>
+<li><strong>less</strong> - View file content interactively</li>
+<li><strong>head</strong> - Display the beginning of a file (<code>-n</code> for number of lines)</li>
+<li><strong>tail</strong> - Display the end of a file (<code>-n</code> for number of lines, <code>-f</code> for following)</li>
+<li><strong>nano</strong> - Simple text editor for file editing</li>
+</ol>
+<h3 id="text-manipulation">Text Manipulation:</h3>
+<ol>
+<li><strong>grep</strong> - Search text using patterns (<code>-i</code> for case insensitive, <code>-r</code> for recursive)</li>
+<li><strong>sed</strong> - Stream editor for text manipulation</li>
+<li><strong>awk</strong> - Text processing tool for pattern scanning and processing</li>
+<li><strong>cut</strong> - Select sections from each line of files (<code>-d</code> for delimiter, <code>-f</code> for fields)</li>
+<li><strong>sort</strong> - Sort lines of text files (<code>-n</code> for numerical sort, <code>-r</code> for reverse)</li>
+</ol>
+<h3 id="user-management">User Management:</h3>
+<ol>
+<li><strong>whoami</strong> - Display the current user</li>
+<li><strong>sudo</strong> - Execute a command as the superuser</li>
+<li><strong>su</strong> - Switch user or become superuser</li>
+<li><strong>useradd</strong> - Add a new user</li>
+<li><strong>passwd</strong> - Change user password</li>
+<li><strong>usermod</strong> - Modify user account</li>
+<li><strong>groupadd</strong> - Create a new group</li>
+<li><strong>chown</strong> - Change file owner and group</li>
+<li><strong>chgrp</strong> - Changes group.</li>
+<li><strong>chmod</strong> - Changes file permissions</li>
+<li><strong>usermod</strong> - Modifies a user</li>
+<li><strong>userdel</strong> - Deletes a user</li>
+</ol>
+<h3 id="process-management">Process Management:</h3>
+<ol>
+<li><strong>ps</strong> - Display current processes (<code>aux</code> for detailed information)</li>
+<li><strong>pspsps</strong> - Summons cats.</li>
+<li><strong>top</strong> - Display and manage running processes</li>
+<li><strong>kill</strong> - Terminate processes by ID or name (<code>-9</code> for forceful termination)</li>
+<li><strong>pgrep</strong> - Search for processes by name (<code>-l</code> for long listing)</li>
+</ol>
+<h3 id="system-information">System Information:</h3>
+<ol>
+<li><strong>uname</strong> - Print system information (<code>-a</code> for all information)</li>
+<li><strong>df</strong> - Display disk space usage</li>
+<li><strong>du</strong> - Display directory space usage</li>
+<li><strong>free</strong> - Display amount of free and used memory in the system</li>
+<li><strong>lscpu</strong> - Display CPU information</li>
+</ol>
+<h3 id="network">Network:</h3>
+<ol>
+<li><strong>ifconfig</strong> - Display or configure network interface parameters</li>
+<li><strong>ping</strong> - Test network connectivity</li>
+<li><strong>netstat</strong> - Display network connections, routing tables, interface statistics</li>
+<li><strong>ssh</strong> - Secure shell for remote login</li>
+<li><strong>scp</strong> - Securely copy files between hosts</li>
+<li><strong>curl</strong> - Transfer data from or to a server</li>
+</ol>
+<h3 id="package-management-debian-based-systems">Package Management (Debian-based systems):</h3>
+<ol>
+<li><strong>apt-get</strong> - Package handling utility for installing, updating, and removing packages</li>
+<li><strong>dpkg</strong> - Package manager for Debian-based systems</li>
+<li><strong>apt-cache</strong> - Query APT cache</li>
+<li><strong>aptitude</strong> - High-level interface for package management</li>
+<li><strong>snap</strong> - Command-line interface for Snap packages</li>
+</ol>
+<h3 id="compression-and-archiving">Compression and Archiving:</h3>
+<ol>
+<li><strong>tar</strong> - Archive files (<code>-x</code> for extract, <code>-c</code> for create, <code>-z</code> for gzip compression)</li>
+<li><strong>gzip</strong> - Compress or decompress files</li>
+<li><strong>zip</strong> - Package and compress files</li>
+</ol>
+<h3 id="system-maintenance">System Maintenance:</h3>
+<ol>
+<li><strong>shutdown</strong> - Shut down or restart the system (<code>-h now</code> for immediate shutdown)</li>
+<li><strong>reboot</strong> - Reboot the system</li>
+<li><strong>date</strong> - Display or set the system date and time</li>
+<li><strong>crontab</strong> - Schedule commands to be executed periodically</li>
+<li><strong>uptime</strong> - Display how long the system has been running</li>
+</ol>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

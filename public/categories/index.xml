@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Patched Atlas</title>
+    <link>//localhost:8080/categories/</link>
+    <description>Recent content in Categories on Patched Atlas</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>no@no.no (Patched Atlas)</managingEditor>
+    <webMaster>no@no.no (Patched Atlas)</webMaster>
+    <atom:link href="//localhost:8080/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

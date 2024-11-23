@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Interpreting Ignorance | Darren Richardson
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2020-04-09-interpreting-ignorance/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Interpreting Ignorance</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2020-04-09">April 9, 2020</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>3 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>The second thing I want to discuss (if you haven&rsquo;t read the first blog post, go here) is the actual implementation of reverse proxies to support HTTPS in non HTTP systems. I am using OCM/Compendium as the example, but this applies everywhere that standard HTTP is provided.</p>
+<p>About a year ago now I was dragged into a discussion between a client&rsquo;s marketing department and their tech department. The tech department refused to allow this reverse proxy setup for HTTPS upgrade for OCM.</p>
+<p>The thing is, their reasons were all valid. They argued that a Man-in-the Middle attack was possible between the HTTP non-encrypted source and the reverse proxy, which would give legitimacy (and encryption) to any illicit material that was inserted downstream. Not to mention the ability to intercept, log and change any form requests that passed through the un-encrypted space.</p>
+<p>They were absolutely right. It is possible.</p>
+<p>But that&rsquo;s the thing about possible. It doesn&rsquo;t mean likely. It just means that is it not impossible.</p>
+<p>This is the argument of &ldquo;Security by Restriction&rdquo; vs &ldquo;Security as an Enabler&rdquo;. Should InfoSec be allowed to stand in the way because something was not bulletproof?</p>
+<p>In IT, even bulletproof systems do not stay bulletproof forever. The deluge of security patches and updates that are pushed upon us daily are a testament to that.</p>
+<p>The client had some excellent suggestions. They recommended that the machine be put on the same network as the unencrypted service. Except we don&rsquo;t own the service, so we have no control over that.</p>
+<p>They suggested a VPN. Except the service doesn&rsquo;t support that.</p>
+<p>They suggested an encrypted tunnel. But the service didn&rsquo;t support it.</p>
+<p>So they said we could not proceed with the project.</p>
+<p>It was the correct call, from information security standards. They&rsquo;d followed the protocol. We could not comply with their suggestions. But they overlooked one small matter.</p>
+<p>The site was, and still is, now hosted with plain HTTP. No encryption. Anywhere.</p>
+<p>IT security flexed the part over which they had control, ignoring the parts they did not.</p>
+<p>This is the equivalent of saying to a medieval soldier &ldquo;We have a suit of armor in your size, but it is missing a helmet and the left glove. It does not offer full protection. As such, we are sending you into battle naked.&rdquo;</p>
+<p>To be perfectly clear, the kind of attacks they were talking about, server-to-server man-in-the-middle attacks, are very rare. They require large resources, and the ability to trick large portions of the backbone networks that support the internet. I cannot find a single documented case of this happening on a large scale.</p>
+<p>However, server-to-browser man-in-the-middle attacks are very common. It is much easier to trick a small network to pass you data than it is to trick a section of the internet backbone. I perform server-to-browser man-in-the-middle attacks almost weekly, whenever I grow bored and my wife is looking at one of those news sites that still don&rsquo;t force TLS as standard. She&rsquo;s got used to seeing my face along-side a news headline of &ldquo;Dangerous Criminal escaped. Wanted for flashing. ROMs.&rdquo;</p>
+<p>This was security policy implemented in a vacuum, with no regard for business sense or even general common sense. The old ideal, security by restriction, the standpoint of &ldquo;you do not meet my requirements, so you cannot do this&rdquo; is dead.</p>
+<p>Instead, security should take the standpoint of &ldquo;How do we mitigate as much of the risk as possible, and does that leave an acceptable, functional system for all parties?&rdquo;</p>
+<p>Security as an enabler.</p>
+<p>Simple.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

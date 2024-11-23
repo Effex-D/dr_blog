@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patched Atlas</title>
+    <link>//localhost:8080/</link>
+    <description>Recent content on Patched Atlas</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>no@no.no (Patched Atlas)</managingEditor>
+    <webMaster>no@no.no (Patched Atlas)</webMaster>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:8080/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:8080/about/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/about/</guid>
+      <description>&lt;p&gt;I am what happens if you cross a security nerd with a european brown bear who just awoke from hibernation: Uncommunicative, somewhat dazed, and unwilling to accept meeting invitations before 10:30 (because why do you people hate sleep?)&lt;/p&gt;&#xA;&lt;p&gt;I write on all topics tech and cybersecurity. I also present at &lt;a href=&#34;https://sessionize.com/darren-richardson/&#34;&gt;conferences&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EU vs AI</title>
+      <link>//localhost:8080/posts/2024-11-02-eu-and-ai/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2024-11-02-eu-and-ai/</guid>
+      <description>&lt;p&gt;We keep seeing the massive tech companies complain about the EU actually attempting to maintain some form of control on AI development. I think we can all agree that their steps are not ideal, but the fact they are being &lt;em&gt;made&lt;/em&gt; is the important matter.&lt;/p&gt;&#xA;&lt;p&gt;Meta suggesting that their new LLaMa models will not be available in the EU, and now Apple saying that their new AI-based features will not be available in the EU. I&amp;rsquo;m sure ol Musky has weighed in on it somewhere too but I won&amp;rsquo;t insult my own intelligence by searching for it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The position of Middlemen</title>
+      <link>//localhost:8080/posts/2024-10-02-middlemen/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2024-10-02-middlemen/</guid>
+      <description>&lt;p&gt;I get frustrated with development at times.&lt;/p&gt;&#xA;&lt;p&gt;This is the simple development loop:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:8080/dev-loop.png&#34; alt=&#34;dev-loop.png&#34;&gt;]&lt;/p&gt;&#xA;&lt;p&gt;This is rarely the way it works in reality, though I feel people would be surprised exactly what a one-person dev team can pull off. Just look at Stardew Valley.&lt;/p&gt;&#xA;&lt;p&gt;This model above is ideal for startups, though as things get more corporate, we start to see things complicate somewhat:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:8080/dev-loop-mid.png&#34; alt=&#34;dev-mid-loop.drawio.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;To specify, this is not at all bad. This frees up developers to be developers without forcing them to be &amp;ldquo;DevOps&amp;rdquo;, allows the infrastructure team to run infrastructure without being forced to develop code, and pushes dealing with end users out to people who are not qualified to do the first two.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The World&#39;s Least Convenient Access Control System - Part 1: Architecture</title>
+      <link>//localhost:8080/posts/2023-05-11-worst-access-control/</link>
+      <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2023-05-11-worst-access-control/</guid>
+      <description>&lt;p&gt;In my apparently never ending quest to engage myself in wasting my own time, I was recently inspired to think about a new project. I wanted to make an access control system. But I didn&amp;rsquo;t want to make a convenient one. Or in fact a useful one at all. I wanted to make the worst, but still completely functional, access control system that I could think of.&lt;/p&gt;&#xA;&lt;h2 id=&#34;theories-of-access-control&#34;&gt;Theories of Access Control&lt;/h2&gt;&#xA;&lt;p&gt;Access Control Systems are security mechanisms used to control and restrict access to physical spaces, information, or other valuable assets. These systems can be used in a wide variety of settings, from corporate offices and government buildings to data centers and hospitals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sensationalist Security Reporting</title>
+      <link>//localhost:8080/posts/2022-10-30-sensationalist-security-reporting/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2022-10-30-sensationalist-security-reporting/</guid>
+      <description>&lt;p&gt;Today I want to discuss one of the largest problems facing the world of security. Not an external threat, a malicious actor or some new, ground-breaking malware. Today I want to discuss an internal threat, a problem that comes from within:&lt;/p&gt;&#xA;&lt;p&gt;Sensationalist reporting in Infosec.&lt;/p&gt;&#xA;&lt;p&gt;Over the past years, reporting in Infosec has started to follow the same general path as reporting in general. Factual information is hidden behind problematic communication. Professionalism has vanished and been replaced by a sort of frantic nervousness that explodes with every new notifcation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Escape Room Tech - Rotary Phone</title>
+      <link>//localhost:8080/posts/2021-07-28-escape-room-tech-rotary-phone/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2021-07-28-escape-room-tech-rotary-phone/</guid>
+      <description>&lt;p&gt;One of my interests, that I&amp;rsquo;ve had to ignore over the last year and a half for obvious reasons, is Escape Rooms. They&amp;rsquo;re like a slice of a video game, transplanted into real life. And I&amp;rsquo;ve succeeded at most of them that I&amp;rsquo;ve attempted. I admit. Humbly.&lt;/p&gt;&#xA;&lt;p&gt;But my interest extends a bit further than just playing these rooms.&lt;/p&gt;&#xA;&lt;p&gt;For a while now, I&amp;rsquo;ve been interested in the actual contents of them. They mostly use mechanical means to create puzzles. Primarily in the form of locks. Locked doors. Boxes. But a couple have used digital means, and it got me thinking a lot about items that could be used in escape rooms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Are cookies stalking?</title>
+      <link>//localhost:8080/posts/2021-06-19-are-cookies-stalking/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2021-06-19-are-cookies-stalking/</guid>
+      <description>&lt;p&gt;Cookies have bothered me for a long time. Okay perhaps not that long. For most of their existence, they sat quietly in the background and I gave them almost no thought.&lt;/p&gt;&#xA;&lt;p&gt;But when I started my short stint in Digital Marketing around the dawn of GDPR, they were thrust rather unceremoniously into the spotlight. I started to become &lt;strong&gt;very&lt;/strong&gt; concerned by what I saw.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-cookies&#34;&gt;What are cookies?&lt;/h2&gt;&#xA;&lt;p&gt;For the completely un-initiated, cookies are basically a packet of information we receive from websites we visit, that we send back. They&amp;rsquo;re not inherently bad. Most of them have legitimate uses. For example authentication. You don&amp;rsquo;t want to type your password every time you log into Facebook, for whatever reason. You tick the box that says &amp;ldquo;remember my login plx&amp;rdquo;. Facebook does this by sending you an authentication cookie. You store that cookie, and while you retain and it is not out of date or invalid, your login is remembered. Harmless, really. (Or not, based on the countless cookie attack vectors we&amp;rsquo;ve seen over recent years, but we&amp;rsquo;ll talk about that another day.)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Real Social Dilemma</title>
+      <link>//localhost:8080/posts/2020-09-23-the-real-social-dilemma/</link>
+      <pubDate>Wed, 23 Sep 2020 14:34:46 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2020-09-23-the-real-social-dilemma/</guid>
+      <description>&lt;p&gt;I recently watched the Social Dilemma. I don&amp;rsquo;t have much to say on that. Not to say it was bad, quite the opposite. Not only was it good, but it was completely correct. Go watch it.&lt;/p&gt;&#xA;&lt;p&gt;No, today I&amp;rsquo;m discussing a different situation. Facebook playing chicken with the EU. The story, in its most succinct and simplified form: Facebook makes money by gathering data. Your data. The EU created laws to protect the data of its citizens. Remember GDPR? Unsurprisingly, tech giants seem quick to disregard these, and other laws. Facebook are disregarding this law with their transfer of EU-citizen&amp;rsquo;s data to their US locations. The EU have pointed this out and said &amp;ldquo;stop&amp;rdquo;. In return, Facebook are threatening to pull both their core platform and Instagram from the EU.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kubernetes Controversy</title>
+      <link>//localhost:8080/posts/2020-08-22-kubernetes-controversy/</link>
+      <pubDate>Sat, 22 Aug 2020 14:34:46 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2020-08-22-kubernetes-controversy/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t like Kubernetes. There. I said it. Controversial I know. Given that huge share of news it receives, you&amp;rsquo;d hardly know there are other container orchestration solutions out there. Personally I find myself wondering why. I don&amp;rsquo;t think the tool is good enough to warrant such attention. But eager to improve myself, I decided to look into the why. After all, perhaps I was wrong. Perhaps I simply didn&amp;rsquo;t understand the Kubernetes use-case.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Cyborg</title>
+      <link>//localhost:8080/posts/2020-07-05-the-cyborg/</link>
+      <pubDate>Sun, 05 Jul 2020 14:34:46 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2020-07-05-the-cyborg/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a trend in the world of technology. The magical becomes commonplace remarkably quickly. And each subsequent achievement suffers from diminishing returns. We already had a computer in our bag, why is it impressive to have one in our pocket? Then on our wrist? Who cares?&lt;/p&gt;&#xA;&lt;p&gt;I like to take a more glass half full approach. And that approach is this:&lt;/p&gt;&#xA;&lt;p&gt;I am a Cyborg.&lt;/p&gt;&#xA;&lt;p&gt;A mix of human and mechanical parts. A mechanically enhanced human.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Controvery: Vim sucks</title>
+      <link>//localhost:8080/posts/2020-05-15-vim-controversy/</link>
+      <pubDate>Fri, 15 May 2020 14:34:46 +0000</pubDate><author>no@no.no (Patched Atlas)</author>
+      <guid>//localhost:8080/posts/2020-05-15-vim-controversy/</guid>
+      <description>&lt;p&gt;I understand this is going to be a somewhat divisive topic. Vim is something akin to Marmite. You either love it or you hate it. Only that&amp;rsquo;s not entirely true. It&amp;rsquo;s more like a one-sided relationship. Vim is something exciting and unapproachable. You start to work with it. Devote hours and hours of your time to learning its quirks and oddities, and in the end, how are you repaid?&lt;/p&gt;&#xA;&lt;p&gt;You get to use a text editor.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

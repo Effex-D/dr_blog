@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Kubernetes Controversy | Patched Atlas
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2020-08-22-kubernetes-controversy/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Kubernetes Controversy</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2020-08-22">August 22, 2020</time></dd>
+            
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>I don&rsquo;t like Kubernetes. There. I said it. Controversial I know. Given that huge share of news it receives, you&rsquo;d hardly know there are other container orchestration solutions out there. Personally I find myself wondering why. I don&rsquo;t think the tool is good enough to warrant such attention. But eager to improve myself, I decided to look into the why. After all, perhaps I was wrong. Perhaps I simply didn&rsquo;t understand the Kubernetes use-case.</p>
+<p>I&rsquo;ve had the opportunity to deal with DevOps consultants from the very start of their inception. Google Trends suggests this term started its increase from 2013 and 2015. I&rsquo;ve held positions in DevOps. I&rsquo;ve worked alongside them. And I&rsquo;ve asked them all this question. &ldquo;Why Kubernetes?&rdquo; or &ldquo;Why K8s over Swarm?&rdquo;.</p>
+<p>So far no one has had a satisfactory answer for me.</p>
+<p>And that&rsquo;s not me being obtuse, or an effort to be a dick on my part. Explanations range from the circular, K8s is good because K8s is good, through the crowdsourced, K8s has a massive community behind it so it must be great, to flat out lies about competitors, along the lines of &ldquo;It&rsquo;s 2018, Swarm is dying.&rdquo; or &ldquo;It&rsquo;s 2019, Swarm is dying.&rdquo; and my personal favourite: &ldquo;It&rsquo;s 2020, Swarm is dying.&rdquo;</p>
+<p>Apparently Swarm dying takes its own sweet time. I hope it&rsquo;s using these last years wisely.</p>
+<p>Bret Fischer, Docker captain and fan of both Docker Swarm and Kubernetes suggests that 80% of use-cases can be solved with Docker Swarm, which has a comparative 20% of K8s&rsquo; features. There&rsquo;s a reason for that, which I&rsquo;ll get to slightly later. He goes on, in his comparison of Swarm Vs K8s, to suggest that one of the primary reasons you&rsquo;d use K8s is that &ldquo;Your boss told you to.&rdquo; I&rsquo;d like to add another reason of &ldquo;Vendor-locks&rdquo; but for that, we need to know why K8s became so popular.</p>
+<p>I&rsquo;m going to blame Google. Google created Kubernetes in 2014. While Docker struggled to maintain a profitable business model, Google was able to penetrate the market with as much force as you&rsquo;d expect from the world&rsquo;s 4th largest tech company, weaving a network of partners to praise and push their parallel platform. That we should espouse one, and ignore the other. There are a set of unwritten rules in tech, and one of them is this: You don&rsquo;t mess with <del>SkyNet</del> Google. (Unless you&rsquo;re the EU) And what happens with their partners? Basically drones. Going out into the wild and pushing K8s into places where it has no business.</p>
+<p>In the meantime, for the developer who already knows Docker (as most of them do), Docker Swarm comes easily. A Developer becomes DevOps, at least in part. Docker Swarm is simple. Docker Swarm is self contained. Docker Swarm is secure.</p>
+<p>Kubernetes is none of these things. Being an Orchestration tool relying upon containers, it cannot be self contained. It requires Docker. Or containerd. But Kubernetes doesn&rsquo;t just complicate a tech stack with itself. You&rsquo;ll rarely see it without addons installed. Maybe you want helm to manage your distribution. And then it has no native DNS so you&rsquo;ll need to install an addon for that. And then you&rsquo;ll need to secure it, because the default options are insecure. So not only do you add complexity with the tool itself, you add three or four other tools to support it. What happened to KISS mentality? How is piling four additional systems on-top of a system that was already functional at all simple?</p>
+<p>Now, I&rsquo;m not saying Kubernetes has no place. It very clearly does. And if you&rsquo;re reading closely enough you should have already figured it out. As Bret Fisher said: 80% of the use cases. Kubernetes exists for the additional 20% of use-cases where you need the advanced features it offers. And given the developers, you should be able to know who is using those advanced features.</p>
+<p>If not, here is a handy, text-based flow-chart. Feel free to print it off and add it to your fridge.</p>
+<pre tabindex="0"><code>Are you Google?
+|=&gt; Yes -&gt; Use Borg. Why are you even looking at this chart?
+|=&gt; No  -&gt; Is your tech stack as complex as Google&#39;s?
+      |=&gt; Yes -&gt; Is it, though? Is it really?
+      |=&gt; No  -&gt; Do you hate your developers, and want them to feel the same about you?
+                 |=&gt; Yes -&gt; Use Kubernetes
+                 |=&gt; No  -&gt; Use Docker Swarm
+</code></pre>
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Escape Room Tech - Rotary Phone | Patched Atlas
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2021-07-28-escape-room-tech-rotary-phone/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Escape Room Tech - Rotary Phone</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2021-07-28">July 28, 2021</time></dd>
+            
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>One of my interests, that I&rsquo;ve had to ignore over the last year and a half for obvious reasons, is Escape Rooms. They&rsquo;re like a slice of a video game, transplanted into real life. And I&rsquo;ve succeeded at most of them that I&rsquo;ve attempted. I admit. Humbly.</p>
+<p>But my interest extends a bit further than just playing these rooms.</p>
+<p>For a while now, I&rsquo;ve been interested in the actual contents of them. They mostly use mechanical means to create puzzles. Primarily in the form of locks. Locked doors. Boxes. But a couple have used digital means, and it got me thinking a lot about items that could be used in escape rooms.</p>
+<p>One idea I had was to repurpose an old rotary phone.</p>
+<p><a href="">An image is missing</a></p>
+<p>I ripped out the original PCB. The phone itself is from the 60s, so the PCB was thick, brown. Looked handmade. The tracks were very visible and components were attached with screws. Quite different from modern devices, but it was interesting to see.</p>
+<p>Inside the phone, there were two things I was interested in attaching to a Raspberry Pi. The rotary dial and the hook switch.</p>
+<p>The hook switch is a complicated device, as demonstrated by the original wiring schematic:</p>
+<p><a href="">Image missing here, too. lazy dev</a></p>
+<p>But I didn&rsquo;t really care about any of that. I was interested in two things: whether the hook switch was down, indicating the handset was in resting position, or up, handset having been lifted. From the ~11 terminals attached to the hook switch, I identified two of them that would let me know all this information, soldered a couple of wires to them and connected them to the Raspberry Pi&rsquo;s GPIO. Easy.</p>
+<p>Next is the rotary dial. A device that you might not even know existed, or know how to use, if you&rsquo;re not an ancient fuck like I am. Basically, you put your finger in the hole of the number you want to dial, rotate it clockwise until you reach the barrier, and then release.</p>
+<p>To see how this functions, we need to look at the four wires. There are two circuits in the rotary dial. I don&rsquo;t know the actual names, so I&rsquo;ll call them the state circuit and the pulse circuit. Things happen in a specific order, when you rotate the dial.</p>
+<ol>
+<li>The state circuit opens</li>
+<li>The pulse circuit opens and closes once for each number you&rsquo;ve dialled</li>
+<li>The state circuit close</li>
+</ol>
+<p>We wait for the state circuit to open, count the pulses we receive until the state circuit closes. It&rsquo;s that simple.</p>
+<p>I wrote a small piece of software that you can find <a href="https://github.com/Effex-D/rotary-phone">here</a>. It acts as a driver for the rotary system. From that launching point, it would be easy to write a piece of software that listens for a password, resetting using the hook switch.</p>
+<p>I also inserted a soundcard, ran a sound cable to the handset, and am searching for a small enough speaker to run inside the device. Then you can send messages with it too.</p>
+<p>This is how I waste my time.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

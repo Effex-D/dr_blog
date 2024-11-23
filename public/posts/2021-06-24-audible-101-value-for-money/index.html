@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+
+
+
+<title>Audible 101: Value for money | Patched Atlas</title>
+<link rel="canonical" href="//localhost:1313/posts/2021-06-24-audible-101-value-for-money/">
+<meta name="description" content="Audiobooks are a growing genre of entertainment. For those of us who used to read a lot and now find ourselves far too busy to pick up something as lavish as an actual book, they&rsquo;re simply the most efficient way to keep up a fiction adiction.
+But the platforms are odd, often ill explained, and occasionally daunting to understand. As such, here is a short guide to your first few months on Audible, how to get started building a library, and to make the best of your first, most precious credits." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Audible 101: Value for money | Patched Atlas" />
+<meta property="og:url" content="//localhost:1313/posts/2021-06-24-audible-101-value-for-money/" />
+<meta property="og:description" content="Audiobooks are a growing genre of entertainment. For those of us who used to read a lot and now find ourselves far too busy to pick up something as lavish as an actual book, they&rsquo;re simply the most efficient way to keep up a fiction adiction.
+But the platforms are odd, often ill explained, and occasionally daunting to understand. As such, here is a short guide to your first few months on Audible, how to get started building a library, and to make the best of your first, most precious credits." />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/icofont/icofont.min.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<script src="/js/copy-code-block.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+        <header class="header-wrapper">
+    <div class="header">
+        <a class="site-title" href="//localhost:1313/">Patched Atlas</a>
+
+        <nav class="menu">
+            
+                <div class="menu-item">
+                    
+                        <a href="/posts/">Posts</a>
+                    
+                </div>
+            
+                <div class="menu-item">
+                    
+                        <a href="">About</a>
+                    
+                </div>
+            
+        </nav>
+    </div>
+</header>
+
+        <main class="main-wrapper">
+            <div class="main">
+                
+
+<section class="single">
+    <h1 class="title">Audible 101: Value for money</h1>
+
+    <div class="tip">
+        <time datetime="2021-06-24 00:00:00 &#43;0000 UTC">2021/06/24</time>
+        <span class="split">·</span>
+        <span> 720 words </span>
+        <span class="split">·</span>
+        <span>
+            4 minutes to read
+        </span>
+    </div>
+
+    <div class="taxonomies">
+        
+
+        
+    </div>
+
+    <hr />
+
+    <div class="content">
+        <p>Audiobooks are a growing genre of entertainment. For those of us who used to read a lot and now find ourselves far too busy to pick up something as lavish as an actual book, they&rsquo;re simply the most efficient way to keep up a fiction adiction.</p>
+<p>But the platforms are odd, often ill explained, and occasionally daunting to understand. As such, here is a short guide to your first few months on Audible, how to get started building a library, and to make the best of your first, most precious credits.</p>
+<p>Firstly a small explanation for those uninitiated with Audible&rsquo;s process. Unlike Netflix or standard streaming services, you can&rsquo;t simply help yourself to anything from Audible. Instead you get access to their originals, as well as a monthly credit with which to buy (and keep for eternity&hellip;) an audiobook.</p>
+<p>For people who have been a member of Audible for some time, these credits have a tendency to pile up. Occasionally, you can even buy more. But for the first month, these options are not available to you. So what should you do?</p>
+<p>Firstly: A little Audible URL magic.</p>
+<p>See, if you go to audible.com, you&rsquo;ll find as basic a browsing library as you can expect. It does the job, though is a little bit uninspired. A better place to go is the <a href="https://audible.com/advsr">advanced search</a> which will let you be a lot more specific.</p>
+<p>However, there&rsquo;s something more we can do. Do a blank search and your URL bar will look something like this:</p>
+<pre tabindex="0"><code>https://www.audible.co.uk/search?keywords=&amp;title=&amp;author_author=&amp;narrator=&amp;publisher=
+</code></pre><p>Find the box that says &ldquo;Sort by&rdquo; and switch it to &ldquo;Running time&rdquo; and you&rsquo;ll see this in your URL bar:</p>
+<pre tabindex="0"><code>https://www.audible.co.uk/search?lots-of-random-stuff&amp;sort=runtime-asc-rank
+</code></pre><p>What these are are URL parameters/arguments. They&rsquo;re used to pass information from the page you&rsquo;ve come from, to the page you&rsquo;re going. You can spot them because they start from the question mark symbol (?) and can be broken down into a list of the format key=value with &amp; as a separator. Forms use this mechanic when to post entered data to other URLs. For example:</p>
+<pre tabindex="0"><code>https://www.audible.co.uk/search?keywords=&amp;title=&amp;author_author=&amp;narrator=&amp;publisher=&amp;publication_date=20230077031&amp;feature_six_browse-bin=20230028031&amp;feature_twelve_browse-bin=20229998031
+
+Let&#39;s break this down...
+
+? - start of the url parameters
+keywords= - no keywords to search by
+&amp;title= - no title to search by
+&amp;author_author= - no specific author
+&amp;narrator= - ... or narrator
+&amp;publisher= ... or publisher
+&amp;publication_date=20230077031 - published in the last 30 days
+&amp;feature_six_browse-bin=20230028031 - feature value for &#34;in English&#34;, I suspect
+&amp;feature_twelve_browse-bin=20229998031 - feature value for &#34;Format: Audiobook&#34;
+</code></pre><p>Easy. Right. So if we go back to our search URL:</p>
+<pre tabindex="0"><code>https://www.audible.co.uk/search?lots-of-random-stuff&amp;sort=runtime-asc-rank
+
+asc typically means &#34;Ascending&#34;. Change it to desc.
+
+https://www.audible.co.uk/search?lots-of-random-stuff&amp;sort=runtime-desc-rank
+</code></pre><p>And just like that, we get all of Audible&rsquo;s audio books in descending order of playtime. Why this option isn&rsquo;t included in the dropdown menu is not immediately obvious from a technical standpoint. But from a business standpoint it is. Each credit is worth money. As you might expect, the business side of audible wants you spending as much as possible.</p>
+<p>That being said, scrolling down the list of playtime shows that you can get fairly far on limited credits. Of course, if you&rsquo;re just looking to maximize your listening time, start at the top and work your way down.</p>
+<p>But a few entries down we end up at <a href="https://www.audible.co.uk/pd/The-Ultimate-Science-Fiction-Mega-Collection-16-of-the-Best-Sci-Fi-Books-of-All-Time-Audiobook/B094X4YQK1">a scifi collection</a> that will net you 16 books, including some of the classics. Frankenstein, the Time Machine, The Invisible Man, and a large helping of Jules Verne&rsquo;s most famous works. You can do worse with your first credit than one-hundred-and-eight hours of classics.</p>
+<p>There&rsquo;s also Sherlock Homles: The Definitive Collection, narrated by Steven Fry for just over seventy hours of entertainment.</p>
+<p>&ldquo;All DEAD&rdquo; deserves a nod of recognition as the longest thing of any kind to appear on Audible, though having never listened, I can&rsquo;t say much more than that.</p>
+<p>10 Masterpieces You Have to Read Before You Die 1 is hell of a convoluted title, but does contain classics. Jane Austen&rsquo;s complete works, Mark Twain&rsquo;s Complete works, George Orwell,  Shakespeare. Even the bible, if you&rsquo;re that way inclined.</p>
+<p>In short, aim for authors, not books. Classics, rather than modern works. Lots of their work falls into the public domain, which made it freely available for narrators and gives a great deal of choice and value. Though technically a lot of these can be found free on <a href="https://librivox.org">Librivox</a>, so keep that in mind.</p>
+
+    </div>
+
+    
+</section>
+
+
+            </div>
+            <div class="side">
+                
+                    <div class="side-recent">
+    <h2 class="side-title">
+        <a href="/posts/">Recent Posts</a>
+    </h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/posts/test/">Test</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-06-03-bookstack-and-almanac/">Bookstack and Almanac</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-04-23-metal-gear-survive/">Metal Gear Survive</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-03-11-loss-and-gain/">Loss and Gain</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-02-16-dictation-and-disobedience/">Dictation and Disobedience</a>
+            </li>
+        
+    </ul>
+</div>
+
+                
+                <div class="side-categories">
+    <h2>Categories</h2>
+    <hr />
+
+    <ul>
+        
+    </ul>
+</div>
+
+                <div class="side-tags">
+    <h2>Tags</h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/tags/gaming">gaming (1)</a>
+            </li>
+        
+            <li>
+                <a href="/tags/infosec">infosec (2)</a>
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer-row">
+        
+            
+            
+                <a class="footer-item" href="//localhost:1313/posts/index.xml">
+                    Feed of Posts
+                    <i class="icofont-rss"></i>
+                </a>
+            
+        
+
+        
+            
+            
+        
+    </div>
+
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Copyright, Darren Richardson 2024</a></span>
+                
+            
+        </div>
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Powered by <a href="https://gohugo.io">Hugo</a></span>
+                
+            
+                
+                    <span class="footer-item">Theme <a href="https://git.leafee98.com/leafee98/hugo-theme-flat.git">hugo-theme-flat</a></span>
+                
+            
+        </div>
+    
+</footer>
+
+    </body>
+</html>

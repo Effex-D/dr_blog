@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+
+
+
+<title>The Great Migration | Patched Atlas</title>
+<link rel="canonical" href="//localhost:1313/posts/2021-06-18-blog-migration/">
+<meta name="description" content="I am in process of migrating my blog.
+Why? Previously I&rsquo;ve been using a custom built system to host my blog. It&rsquo;s written using Python3 and Flask, runs in a docker container, sits on a rented virtual server and has requests fed to it via nGinx.
+That&rsquo;s a lot of work for a glorified website. And not that glorified, believe me.
+I built it for a reason, of course. That reason was to demonstrate the idea of &ldquo;security through entrapment&rdquo; so it was filled with lots of weird little tripwires and pit-traps for people to fall into. But with the source in github, a database on the server itself, pipelines to push updates, the whole thing just became completely unwieldy. Four different technologies just to support one site. Not to mention the looks of the thing. I am not a front-end guy. And while it didn&rsquo;t look bad, changes to it were almost impossible. I have no eye for such things." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Great Migration | Patched Atlas" />
+<meta property="og:url" content="//localhost:1313/posts/2021-06-18-blog-migration/" />
+<meta property="og:description" content="I am in process of migrating my blog.
+Why? Previously I&rsquo;ve been using a custom built system to host my blog. It&rsquo;s written using Python3 and Flask, runs in a docker container, sits on a rented virtual server and has requests fed to it via nGinx.
+That&rsquo;s a lot of work for a glorified website. And not that glorified, believe me.
+I built it for a reason, of course. That reason was to demonstrate the idea of &ldquo;security through entrapment&rdquo; so it was filled with lots of weird little tripwires and pit-traps for people to fall into. But with the source in github, a database on the server itself, pipelines to push updates, the whole thing just became completely unwieldy. Four different technologies just to support one site. Not to mention the looks of the thing. I am not a front-end guy. And while it didn&rsquo;t look bad, changes to it were almost impossible. I have no eye for such things." />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/icofont/icofont.min.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<script src="/js/copy-code-block.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+        <header class="header-wrapper">
+    <div class="header">
+        <a class="site-title" href="//localhost:1313/">Patched Atlas</a>
+
+        <nav class="menu">
+            
+                <div class="menu-item">
+                    
+                        <a href="/posts/">Posts</a>
+                    
+                </div>
+            
+                <div class="menu-item">
+                    
+                        <a href="">About</a>
+                    
+                </div>
+            
+        </nav>
+    </div>
+</header>
+
+        <main class="main-wrapper">
+            <div class="main">
+                
+
+<section class="single">
+    <h1 class="title">The Great Migration</h1>
+
+    <div class="tip">
+        <time datetime="2021-06-18 12:34:46 &#43;0000 UTC">2021/06/18</time>
+        <span class="split">·</span>
+        <span> 405 words </span>
+        <span class="split">·</span>
+        <span>
+            2 minutes to read
+        </span>
+    </div>
+
+    <div class="taxonomies">
+        
+
+        
+    </div>
+
+    <hr />
+
+    <div class="content">
+        <p>I am in process of migrating my blog.</p>
+<p>Why? Previously I&rsquo;ve been using a custom built system to host my blog. It&rsquo;s written using Python3 and Flask, runs in a docker container, sits on a rented virtual server and has requests fed to it via nGinx.</p>
+<p>That&rsquo;s a lot of work for a glorified website. And not that glorified, believe me.</p>
+<p>I built it for a reason, of course. That reason was to demonstrate the idea of &ldquo;security through entrapment&rdquo; so it was filled with lots of weird little tripwires and pit-traps for people to fall into. But with the source in github, a database on the server itself, pipelines to push updates, the whole thing just became completely unwieldy. Four different technologies just to support one site. Not to mention the looks of the thing. I am <em>not</em> a front-end guy. And while it didn&rsquo;t look bad, changes to it were almost impossible. I have no eye for such things.</p>
+<p>So I started looking into alternatives. I considered Ghost for a while. Open source blogging platform gives me a bit of a nerd-on after parts of my past life dealing with terrible commercial efforts and WordPress. But again, required hosting. Github Pages was something I wanted to exploit. I mean these guys are cool enough to give us free space. Why wouldn&rsquo;t I use it?</p>
+<p>There are a couple of projects dedicated to running ghost in Github Pages, but it didn&rsquo;t eliminate one thing that always bothered me about these packages. Why require a database at all? Storing text, images, etc, should <em>not</em> be this hard.</p>
+<p>My attention was drawn, as it had been before, to Jekyll. And here we are. It&rsquo;s pretty sensible, I guess, rendering static pages. After about an hour of wrestling I got this whole thing set up with a theme I like.</p>
+<p>Now there&rsquo;s just the task of my old blog and migrating some of the blog posts here. Not all of them. Some of them are out of date. Some of them are stupid. And I wanted to try a different style of writing. More free. Closer to mirroring an internal thought process. That way I can blog, however shortly, on all matters that strike my attention. Before I focused on InfoSec, and that will likely be a heavy focus here too. But maybe music. Gaming. Politics. Maybe this will end up as my version of Anorak&rsquo;s Almanac.</p>
+
+    </div>
+
+    
+</section>
+
+
+            </div>
+            <div class="side">
+                
+                    <div class="side-recent">
+    <h2 class="side-title">
+        <a href="/posts/">Recent Posts</a>
+    </h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/posts/test/">Test</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-06-03-bookstack-and-almanac/">Bookstack and Almanac</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-04-23-metal-gear-survive/">Metal Gear Survive</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-03-11-loss-and-gain/">Loss and Gain</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-02-16-dictation-and-disobedience/">Dictation and Disobedience</a>
+            </li>
+        
+    </ul>
+</div>
+
+                
+                <div class="side-categories">
+    <h2>Categories</h2>
+    <hr />
+
+    <ul>
+        
+    </ul>
+</div>
+
+                <div class="side-tags">
+    <h2>Tags</h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/tags/gaming">gaming (1)</a>
+            </li>
+        
+            <li>
+                <a href="/tags/infosec">infosec (2)</a>
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer-row">
+        
+            
+            
+                <a class="footer-item" href="//localhost:1313/posts/index.xml">
+                    Feed of Posts
+                    <i class="icofont-rss"></i>
+                </a>
+            
+        
+
+        
+            
+            
+        
+    </div>
+
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Copyright, Darren Richardson 2024</a></span>
+                
+            
+        </div>
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Powered by <a href="https://gohugo.io">Hugo</a></span>
+                
+            
+                
+                    <span class="footer-item">Theme <a href="https://git.leafee98.com/leafee98/hugo-theme-flat.git">hugo-theme-flat</a></span>
+                
+            
+        </div>
+    
+</footer>
+
+    </body>
+</html>

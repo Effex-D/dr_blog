@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-GB"
+      dir="ltr"
+      class="dark-mode ">
+<head>
+    <title>docs.dnr.wtf</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="token" content="QEbJPVexKZ0UdfbBxU0Xvu1tbtpCBffUCoDGopee">
+    <meta name="base-url" content="https://docs.dnr.wtf">
+    <meta name="theme-color" content="#5e5c64"/>
+
+    <!-- Social Cards Meta -->
+    <meta property="og:title" content="docs.dnr.wtf">
+    <meta property="og:url" content="https://docs.dnr.wtf/uploads/images/gallery/2024-06/scaled-1680-/UALEt09156RxoHTX-middleme">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://docs.dnr.wtf/dist/styles.css?version=v24.05.1">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="256x256" href="https://docs.dnr.wtf/icon.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="https://docs.dnr.wtf/icon-180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://docs.dnr.wtf/icon-180.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://docs.dnr.wtf/icon-128.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://docs.dnr.wtf/icon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://docs.dnr.wtf/icon-32.png">
+
+    <!-- PWA -->
+    <link rel="manifest" href="https://docs.dnr.wtf/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    
+    <!-- Custom Styles & Head Content -->
+    <style>
+    :root {
+        --color-primary: #5e5c64;
+        --color-primary-light: rgba(94,92,100,0.15);
+        --color-link: #429fe3;
+        --color-bookshelf: #613583;
+        --color-book: #e66100;
+        --color-chapter: #2ec27e;
+        --color-page: #429fe3;
+        --color-page-draft: #a66ce8;
+    }
+</style>
+    
+    
+    <!-- Translations for JS -->
+    </head>
+<body
+          class="">
+
+        <a class="px-m py-s skip-to-content-link print-hidden" href="#main-content">Skip to main content</a>    <div component="notification"
+     option:notification:type="success"
+     option:notification:auto-hide="true"
+     option:notification:show="false"
+     style="display: none;"
+     class="notification pos"
+     role="alert">
+    <svg class="svg-icon" data-icon="check-circle" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"/></svg> <span></span><div class="dismiss"><svg class="svg-icon" data-icon="close" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path fill="none" d="M0 0h24v24H0z"/></svg></div>
+</div>
+
+<div component="notification"
+     option:notification:type="warning"
+     option:notification:auto-hide="false"
+     option:notification:show="false"
+     style="display: none;"
+     class="notification warning"
+     role="alert">
+    <svg class="svg-icon" data-icon="info" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 17h2v-6h-2zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8M11 9h2V7h-2z"/></svg> <span></span><div class="dismiss"><svg class="svg-icon" data-icon="close" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path fill="none" d="M0 0h24v24H0z"/></svg></div>
+</div>
+
+<div component="notification"
+     option:notification:type="error"
+     option:notification:auto-hide="false"
+     option:notification:show="false"
+     style="display: none;"
+     class="notification neg"
+     role="alert">
+    <svg class="svg-icon" data-icon="danger" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27zM12 17.3c-.72 0-1.3-.58-1.3-1.3s.58-1.3 1.3-1.3 1.3.58 1.3 1.3-.58 1.3-1.3 1.3m1-4.3h-2V7h2z"/><path fill="none" d="M0 0h24v24H0z"/></svg> <span></span><div class="dismiss"><svg class="svg-icon" data-icon="close" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path fill="none" d="M0 0h24v24H0z"/></svg></div>
+</div>    <header id="header" component="header-mobile-toggle" class="primary-background px-xl grid print-hidden">
+    <div class="flex-container-row justify-space-between gap-s items-center">
+        <a href="https://docs.dnr.wtf" data-shortcut="home_view" class="logo">
+            <img class="logo-image" src="https://docs.dnr.wtf/uploads/images/system/2024-06/ZiRGg7D5N5B0ADri-wolf.png" alt="Logo">
+                <span class="logo-text">docs.dnr.wtf</span>
+    </a>        <div class="hide-over-l py-s">
+            <button type="button"
+                    refs="header-mobile-toggle@toggle"
+                    title="Expand Header Menu"
+                    aria-expanded="false"
+                    class="mobile-menu-toggle"><svg class="svg-icon" data-icon="more" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2"/></svg></button>
+        </div>
+    </div>
+
+    <div class="flex-container-column items-center justify-center hide-under-l">
+            <form component="global-search" action="https://docs.dnr.wtf/search" method="GET" class="search-box" role="search" tabindex="0">
+    <button id="header-search-box-button"
+            refs="global-search@button"
+            type="submit"
+            aria-label="Search"
+            tabindex="-1"><svg class="svg-icon" data-icon="search" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"/><path fill="none" d="M0 0h24v24H0z"/></svg></button>
+    <input id="header-search-box-input"
+           refs="global-search@input"
+           type="text"
+           name="term"
+           data-shortcut="global_search"
+           autocomplete="off"
+           aria-label="Search" placeholder="Search"
+           value="">
+    <div refs="global-search@suggestions" class="global-search-suggestions card">
+        <div refs="global-search@loading" class="text-center px-m global-search-loading"><div class="loading-container">
+    <div></div>
+    <div></div>
+    <div></div>
+    </div></div>
+        <div refs="global-search@suggestion-results" class="px-m"></div>
+        <button class="text-button card-footer-link" type="submit">View All</button>
+    </div>
+</form>        </div>
+
+    <nav refs="header-mobile-toggle@menu" class="header-links">
+        <div class="links text-center">
+            <a class="hide-over-l" href="https://docs.dnr.wtf/search"><svg class="svg-icon" data-icon="search" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"/><path fill="none" d="M0 0h24v24H0z"/></svg>Search</a>
+            <a href="https://docs.dnr.wtf/shelves"
+           data-shortcut="shelves_view"><svg class="svg-icon" data-icon="bookshelf" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path fill="none" d="M1.088 2.566h17.42v17.42H1.088z"/><path d="M4 20.058h15.892V22H4z"/><path fill="none" d="M2.902 1.477h17.42v17.42H2.903z"/><path d="M6.658 3.643V18h-2.38V3.643zm4.668 0V18H8.947V3.643zm3.396.213 5.613 13.214-2.19.93-5.613-13.214z"/></svg>Shelves</a>
+        <a href="https://docs.dnr.wtf/books" data-shortcut="books_view"><svg class="svg-icon" data-icon="books" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.252 1.708H8.663a1.77 1.77 0 0 0-1.765 1.764v14.12c0 .97.794 1.764 1.765 1.764h10.59a1.77 1.77 0 0 0 1.764-1.765V3.472a1.77 1.77 0 0 0-1.765-1.764M8.663 3.472h4.412v7.06L10.87 9.208l-2.206 1.324z"/><path fill="none" d="M30.61 3.203h24v24h-24z"/><path d="M2.966 6.61v14c0 1.1.9 2 2 2h14v-2h-14v-14z"/></svg>Books</a>
+        
+        <a href="https://docs.dnr.wtf/login"><svg class="svg-icon" data-icon="login" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14a2 2 0 0 0-2-2M11 16l4-4-4-4v3H1v2h10z"/></svg>Log in</a>
+        </div>
+            </nav>
+</header>
+
+    <div id="content" components="" class="block">
+            <div class="container mt-l">
+
+        <div class="card mb-xl px-l pb-l pt-l">
+            <div class="grid half v-center">
+                <div>
+                    <h1 class="list-heading">Image Not Found</h1>
+<h5>Sorry, The image file you were looking for could not be found.</h5>
+<p>If you expected this image to exist it might have been deleted.</p>                </div>
+                <div class="text-right">
+                                            <a href="https://docs.dnr.wtf/login" class="button outline">Log in</a>
+                                        <a href="https://docs.dnr.wtf" class="button outline">Return to home</a>
+                </div>
+            </div>
+
+        </div>
+
+                    <div class="grid third gap-xxl">
+                <div>
+                    <div class="card mb-xl">
+                        <h3 class="card-title">Popular Pages</h3>
+                        <div class="px-m">
+                            <div class="entity-list compact">
+                    <a href="https://docs.dnr.wtf/books/the-blog/page/developers-and-middlemen" class="page   entity-list-item" data-entity-type="page" data-entity-id="49">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Developers and Middlemen</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">I get frustrated with development at times.
+This is the simple development loop:
+
+This is rarely ...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/page/000-introduction" class="page   entity-list-item" data-entity-type="page" data-entity-id="1">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">000 - Introduction</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">I am a lazy nerd.
+And I&#039;ve been accused of having ADHD on any number of occasions.</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/page/burritos-with-rice-and-beans" class="page   entity-list-item" data-entity-type="page" data-entity-id="24">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Burritos with Rice and Beans</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">Ingredients
+Bread:
+
+8 large tortillas
+
+For Fajita Vegetables
+
+3 medium onions
+3 bell peppers (red...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/page/on-rice-onions-pasta-and-gate-keeping-in-cooking" class="page   entity-list-item" data-entity-type="page" data-entity-id="67">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">On Rice, Onions, Pasta, and Gate-Keeping in Cooking.</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">The Art of Cooking
+Cooking is a personal art, and a requirement for life.
+If you explore recipes,...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-blog/page/the-eu-vs-ai" class="page   entity-list-item" data-entity-type="page" data-entity-id="75">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">The EU vs AI</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">We keep seeing the massive tech companies complain about the EU actually attempting to maintain s...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-blog/page/something-different-linkin-park" class="page   entity-list-item" data-entity-type="page" data-entity-id="76">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Something Different: Linkin Park</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">You&#039;d be forgiven, if you read this blog, for thinking that I&#039;m solely a tech blogger, who does n...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/video-games/page/half-life-alyx" class="page   entity-list-item" data-entity-type="page" data-entity-id="69">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Half-Life: Alyx</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">HLA is an amazing tech demo used to deliver a somewhat mediocre game.
+Don&#039;t get me wrong, I&#039;m hav...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/page/minced-beef-soup" class="page   entity-list-item" data-entity-type="page" data-entity-id="25">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Minced Beef Soup</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">Notes
+Cooking is one of the few places where cheating is acceptable. Cooking should not be diffic...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-blog/page/a-lifes-work" class="page   entity-list-item" data-entity-type="page" data-entity-id="35">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">A Life&#039;s Work</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">I do hate apple.
+But sometimes I find myself liking them in spite of my dislike. The hardware iss...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/series/page/cowboy-bebop-netflix-live-action" class="page   entity-list-item" data-entity-type="page" data-entity-id="51">
+    <span role="presentation" class="icon text-page"><svg class="svg-icon" data-icon="page" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Cowboy Bebop - Netflix Live Action</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">There was nothing wrong with it.
+People are just malding nerds who get furious and collectively s...</p>
+</div>
+    </div>
+</a>            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card mb-xl">
+                        <h3 class="card-title">Popular Books</h3>
+                        <div class="px-m">
+                            <div class="entity-list compact">
+                    <a href="https://docs.dnr.wtf/books/the-blog" class="book   entity-list-item" data-entity-type="book" data-entity-id="3">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">The Blog Pages</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">Verify that you are, in fact, human?</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook" class="book   entity-list-item" data-entity-type="book" data-entity-id="2">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">The Busy Nerd&#039;s Cookbook</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text">I struggle with cooking at times. This is a collection of recipes designed for a person who strug...</p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/misc-tech" class="book   entity-list-item" data-entity-type="book" data-entity-id="7">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Misc Tech</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/video-games" class="book   entity-list-item" data-entity-type="book" data-entity-id="14">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Video Games</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/travel" class="book   entity-list-item" data-entity-type="book" data-entity-id="5">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Travel</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/music" class="book   entity-list-item" data-entity-type="book" data-entity-id="12">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Music</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/series" class="book   entity-list-item" data-entity-type="book" data-entity-id="13">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Series</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/books" class="book   entity-list-item" data-entity-type="book" data-entity-id="15">
+    <span role="presentation" class="icon text-book"><svg class="svg-icon" data-icon="book" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Books</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card mb-xl">
+                        <h3 class="card-title">Popular Chapters</h3>
+                        <div class="px-m">
+                            <div class="entity-list compact">
+                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/chapter/001-easy-meals" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="4">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">001 - Easy Meals</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/video-games/chapter/vr" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="14">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">VR</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/video-games/chapter/from-software" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="5">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">From Software</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/chapter/999-notes" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="13">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">999 - Notes</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/misc-tech/chapter/radio" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="2">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Radio</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/the-busy-nerds-cookbook/chapter/002-artisanal-sandwiches" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="3">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">002 - Artisanal Sandwiches</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>                    <a href="https://docs.dnr.wtf/books/misc-tech/chapter/windows" class="chapter   entity-list-item" data-entity-type="chapter" data-entity-id="15">
+    <span role="presentation" class="icon text-chapter"><svg class="svg-icon" data-icon="chapter" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z"/></svg></span>
+    <div class="content">
+            <h4 class="entity-list-item-name break-text">Windows</h4>
+            <div class="entity-item-snippet">
+
+    
+    
+    <p class="text-muted break-text"></p>
+</div>
+    </div>
+</a>            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+    
+    <div component="back-to-top" class="back-to-top print-hidden">
+        <div class="inner">
+            <svg class="svg-icon" data-icon="chevron-up" role="presentation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"/><path fill="none" d="M0 0h24v24H0z"/></svg> <span>Back to top</span>
+        </div>
+    </div>
+
+        
+            <script src="https://docs.dnr.wtf/dist/app.js?version=v24.05.1" nonce="4r6dTlLcNdd5RernkgDULCGC"></script>
+            
+    </body>
+</html>

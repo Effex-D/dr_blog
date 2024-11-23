@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Replacing OpenVPN with Nord Meshnet | Darren Richardson
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2022-08-06-replacing-openvpn/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Replacing OpenVPN with Nord Meshnet</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2022-08-06">August 6, 2022</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>2 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>VPNs have always been somewhat annoying for me to configure. Like a lot of people running a homelab, I use a forward facing node with a VPN attached to route traffic through to my internal servers. This forces me to do one of two things:</p>
+<ol>
+<li>Set up a VPN Server on my forward facing server. This increases my attack surface, as it requires an additional port open on my server as opposed to HTTPS and restricted, ip-allowlisted SSH.</li>
+<li>I can set up a VPN server on my personal network router. I don&rsquo;t like this as I prefer to restrict all connection towards my internal network.</li>
+</ol>
+<p>In the past, I&rsquo;ve gone with option 1. And it worked reasonably well. But the setup was always a pain in the ass. It involved setting up a listening daemon on the server and a bunch of clients for each device connecting. Once it was up and running, it went just fine. But it took a couple of hours of teasing and tweaking. For each client, I was generating new certificates and a new set of client configs for every machine, even if I was only connecting to it for a few minutes.</p>
+<p><img src="/blog/assets/images/arch0.png" alt="Architecture 0"></p>
+<p>Then NordVPN, who are my preferred VPN provider despite Reddit&rsquo;s flaccid anger over it, came out with a new feature. Meshnet. A simple tool for generating private, point-to-point private networks with minimal configuration.</p>
+<p>It sets up with two commands and is fully functional in minutes.</p>
+<pre tabindex="0"><code>nordvpn login
+nordvpn set meshnet on
+</code></pre><p>While it&rsquo;s not great for production workloads, it comes with a NordVPN subscription, so for those of us who maintain one, it is absolutely free. Here is the architecture with Meshnet:</p>
+<p><img src="/blog/assets/images/arch1.png" alt="Architecture 1"></p>
+<p>It does have limitations, such as only 6 machines being actively connected at once. But at least for my home lab purposes, that&rsquo;s worked pretty well. And if that covers enough hosts for you, it might work pretty well for you too.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

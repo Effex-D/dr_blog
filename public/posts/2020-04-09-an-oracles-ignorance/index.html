@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+An Oracle&#39;s Ignorance | Darren Richardson
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2020-04-09-an-oracles-ignorance/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>An Oracle&#39;s Ignorance</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2020-04-09">April 9, 2020</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>3 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>Today I am writing a two part blog. I will probably write and publish both blogs today, but people have short attention spans when it comes to reading (but can binge Netflix like a beast) so I am splitting it in half.</p>
+<p>In the first part I want to talk about Oracle, OCM and TLS.</p>
+<p>Oracle, for the few (or none) of you who don&rsquo;t know, are an American tech company who specialize in database management and the systems that connect to such data stores. In theory.</p>
+<p>In actuality, they run a business model similar to that of Electronic Arts. Find promising up-and-coming developers with an exciting product. Make said developer and offer they can&rsquo;t refuse. Purchase company and product. Drain product for all value. Once product is drained, discard.</p>
+<p>If you&rsquo;d like proof, just check out the acquisitions page Just try not to fall for their marketing hype.</p>
+<p>Oracle have no fire behind their development. No real interest in it, other than the min/maxing of profits. As such, Oracle technologies lag behind the latest innovations from other, similar products.</p>
+<p>And I want to talk about one of those products today.</p>
+<p>OCM. Oracle Content Management.</p>
+<p>We all know of blogging platforms. Mortals have access to Wordpress and Medium and Blogger. One nerd even uses [Se]m[bl][en]ce. We dumb them down to blogging platforms, but what they actually represent are Content Management Systems (CMS). A way for non-tech people to manage content inside a safe system, and still publish with a specific style and branding. Huge amounts of websites are hosted using these systems, with Wordpress alone comprising 60.4% of the market share of CMS systems (and 33.5% of all websites. Literally. Of all websites, a third run Wordpress.)</p>
+<p>But there&rsquo;s another, invisible layers. Sitecore. Pantheon. You&rsquo;re likely never to have heard of these. They are marketed to people who run companies operating in the tens to hundreds of millions. They don&rsquo;t want to be dealing with your piddly little $10/month website.</p>
+<p>OCM is Oracle&rsquo;s attempt to step into this market. Though I feel that is an inaccurate statement. It was once Oracle&rsquo;s newest attempt to suck some money from the teat of a business they care precious little about.</p>
+<p>OCM started life in 2007 as the product compendium. A Content Marketing Platform, basically a CMS tilted towards marketing (and what part of the internet, these days, is not?). Compendium was purchased in 2013 by Oracle, and the draining began.</p>
+<p>Compendium was not a great contender to begin with, though Oracle&rsquo;s habit of halting development until legally required has made things far worse. But instead of going through all its problems here, I want to talk about one specific problem.</p>
+<p>Compendium does not natively support HTTPS.</p>
+<p>It offers no support for obtaining certificates. Or even uploading your own. The official documentation for OCM states that HTTPS function is provided through a reverse proxy. Which sounds fancy, doesn&rsquo;t it?</p>
+<p>A reverse proxy is literally another machine, that converts the upstream traffic to HTTPS.</p>
+<p>You can only encrypt your traffic in OCM by using an expensive work-around that requires technical resources. On a machine that could be used to host the content, in lieu of Compendium/OCM.</p>
+<p>By comparison? Wordpress, Blogger, Medium, all offer TLS encryption as standard.</p>
+<p>Because the year is 2020.</p>
+<p>P.S: As an ironic aside: check the link above. Oracle&rsquo;s website runs TLS, so they clearly see the value of it. Just not for other people.</p>
+<p>P.P.(hurr).S: Still have an attention span? Want to keep reading? Cool. Go here</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

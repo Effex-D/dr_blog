@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta name="generator" content="Hugo 0.136.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+
+
+
+<title>Patched Atlas</title>
+<link rel="canonical" href="//localhost:1313/">
+<meta name="description" content="The Journey Starts with a Single Hack" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Patched Atlas" />
+<meta property="og:url" content="//localhost:1313/" />
+<meta property="og:description" content="The Journey Starts with a Single Hack" />
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/index.xml" title="Patched Atlas" />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/icofont/icofont.min.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<script src="/js/copy-code-block.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+        <header class="header-wrapper">
+    <div class="header">
+        <a class="site-title" href="//localhost:1313/">Patched Atlas</a>
+
+        <nav class="menu">
+            
+                <div class="menu-item">
+                    
+                        <a href="/posts/">Posts</a>
+                    
+                </div>
+            
+                <div class="menu-item">
+                    
+                        <a href="">About</a>
+                    
+                </div>
+            
+        </nav>
+    </div>
+</header>
+
+        <main class="main-wrapper">
+            <div class="main">
+                
+
+<div class="max-wrapper">
+    <div id="list-page">
+        
+        
+        
+            <section class="list-item">
+                <h1 class="title"><a href="/posts/2022-09-30-interesting-web-traffic/">Interesting web traffic</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="2022-09-30 00:00:00 &#43;0000 UTC">2022/09/30</time>
+                    </div>
+
+                    
+
+                    
+                        <div class="tags">
+                            <span>Tags:</span>
+                            
+                                <a href="/tags/infosec">infosec</a>
+                            
+                        </div>
+                    
+                </div>
+
+                <div class="summary">
+                    
+                        <p>I got bored and decided to have a quick browse of my web server&rsquo;s access logs.</p>
+<h4 id="directory-traversal">Directory Traversal <a href="#directory-traversal" class="anchor">🔗</a></h4><pre tabindex="0"><code>GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1
+</code></pre><p>This one is a web traversal attack attempt. From what I can see it is intended for Fortios SSL VPNs. Which my server does not run. More info:</p>
+<p><a href="https://gist.github.com/code-machina/bae5555a771062f2a8225fd4731ae3f7">https://gist.github.com/code-machina/bae5555a771062f2a8225fd4731ae3f7</a></p>
+<h4 id="directory-traversal-2">Directory Traversal 2 <a href="#directory-traversal-2" class="anchor">🔗</a></h4><p>Then we have another directory traversal attack:</p>
+<pre tabindex="0"><code>/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/hosts HTTP/1.1
+</code></pre><p>This one is directed at Apache. Which my server does not run. Details:</p>
+                    
+                </div>
+            </section>
+        
+            <section class="list-item">
+                <h1 class="title"><a href="/posts/2022-08-06-replacing-openvpn/">Replacing OpenVPN with Nord Meshnet</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="2022-08-06 00:00:00 &#43;0000 UTC">2022/08/06</time>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <div class="summary">
+                    
+                        <p>VPNs have always been somewhat annoying for me to configure. Like a lot of people running a homelab, I use a forward facing node with a VPN attached to route traffic through to my internal servers. This requires me to do one of two things:</p>
+<ol>
+<li>Set up a VPN Server on my forward facing server. This increases my attack surface, as it requires an additional port open on my server as opposed to HTTPS and restricted, ip-allowlisted SSH.</li>
+<li>I can set up a VPN server on my personal network router. I don&rsquo;t like this as I prefer to restrict all connection towards my internal network.</li>
+</ol>
+<p>In the past, I&rsquo;ve gone with option 1. And it worked reasonably well. But the setup was always a pain in the ass. It involved setting up a listening daemon on the server and a bunch of clients for each device connecting. Once it was up and running, it went just fine. But it took a couple of hours of teasing and tweaking. For each client, I was generating new certificates and a new set of client configs for every machine, even if I was only connecting to it for a few minutes.</p>
+                    
+                </div>
+            </section>
+        
+            <section class="list-item">
+                <h1 class="title"><a href="/posts/2021-07-28-escape-room-tech-rotary-phone/">Escape Room Tech - Rotary Phone</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="2021-07-28 00:00:00 &#43;0000 UTC">2021/07/28</time>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <div class="summary">
+                    
+                        <p>One of my interests, that I&rsquo;ve had to ignore over the last year and a half for obvious reasons, is Escape Rooms. They&rsquo;re like a slice of a video game, transplanted into real life. And I&rsquo;ve succeeded at most of them that I&rsquo;ve attempted. I admit. Humbly.</p>
+<p>But my interest extends a bit further than just playing these rooms.</p>
+<p>For a while now, I&rsquo;ve been interested in the actual contents of them. They mostly use mechanical means to create puzzles. Primarily in the form of locks. Locked doors. Boxes. But a couple have used digital means, and it got me thinking a lot about items that could be used in escape rooms.</p>
+                    
+                </div>
+            </section>
+        
+            <section class="list-item">
+                <h1 class="title"><a href="/posts/2021-06-24-powering-pi/">Powering Pi</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="2021-06-24 00:00:00 &#43;0000 UTC">2021/06/24</time>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <div class="summary">
+                    
+                        <p>For a while now I&rsquo;ve been annoyed somewhat by Raspberry Pi power supplies.</p>
+<p>Raspberry Pis are supposed to be a compact, credit-card sized computer that runs on fairly low power. And it does. You can (and I have) run it quite well from a standard powerpack and MicroUSB cable.</p>
+<p>It works pretty well, if you&rsquo;re just trying to use one. You plug it into a socket, and it works. But my desktop machine runs off one socket too. As do all my laptops.</p>
+                    
+                </div>
+            </section>
+        
+
+    </div>
+    
+
+<nav class="pagination">
+
+    
+    
+    
+    
+    
+        
+            
+            
+
+            
+                <a class="enabled" href="/">1</a>
+            
+
+        
+    
+        
+            
+            
+
+            
+                <a class="enabled current" href="/page/2/">2</a>
+            
+
+        
+    
+        
+            
+            
+
+            
+                <a class="enabled" href="/page/3/">3</a>
+            
+
+        
+    
+        
+            
+            
+
+            
+                <a class="enabled" href="/page/4/">4</a>
+            
+
+        
+    
+        
+            
+            
+
+            
+                <a class="enabled" href="/page/5/">5</a>
+            
+
+        
+    
+
+</nav>
+</div>
+
+            </div>
+            <div class="side">
+                
+                    <div class="side-recent">
+    <h2 class="side-title">
+        <a href="/posts/">Recent Posts</a>
+    </h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/posts/2024-11-02-eu-and-ai/">EU vs AI</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-10-02-middlemen/">The position of Middlemen</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2023-05-11-worst-access-control/">The World&#39;s Least Convenient Access Control System - Part 1: Architecture</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2022-10-30-sensationalist-security-reporting/">Sensationalist Security Reporting</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2022-09-30-interesting-web-traffic/">Interesting web traffic</a>
+            </li>
+        
+    </ul>
+</div>
+
+                
+                <div class="side-categories">
+    <h2>Categories</h2>
+    <hr />
+
+    <ul>
+        
+    </ul>
+</div>
+
+                <div class="side-tags">
+    <h2>Tags</h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/tags/infosec">infosec (2)</a>
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer-row">
+        
+            
+            
+                <a class="footer-item" href="//localhost:1313/posts/index.xml">
+                    Feed of Posts
+                    <i class="icofont-rss"></i>
+                </a>
+            
+        
+
+        
+    </div>
+
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Copyright, Darren Richardson 2024</a></span>
+                
+            
+        </div>
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Powered by <a href="https://gohugo.io">Hugo</a></span>
+                
+            
+                
+                    <span class="footer-item">Theme <a href="https://git.leafee98.com/leafee98/hugo-theme-flat.git">hugo-theme-flat</a></span>
+                
+            
+        </div>
+    
+</footer>
+
+    </body>
+</html>

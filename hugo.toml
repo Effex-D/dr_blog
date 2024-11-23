@@ -1,0 +1,29 @@
+title = "Patched Atlas"
+subtitle = "The journey starts with a single hack"
+theme = "nightfall"
+baseURL = ""
+
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "posts"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+
+[params]
+description = "The Journey Starts with a Single Hack"
+footerHtml = 'Copyright, Darren Richardson 2020-2024'
+user = "dr"
+hostname = "patched-atlas"
+readingTime = false
+
+  [params.author]
+    name = "Patched Atlas"
+    email = "no@no.no"
+
+  [params.styles]
+    color = "orange"
+

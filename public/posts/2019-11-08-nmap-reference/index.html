@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+    <title>
+NMAP Reference | Darren Richardson
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.139.0">
+
+
+<link rel="canonical" href="//localhost:8080/posts/2019-11-08-nmap-reference/" >
+
+
+
+
+<link href="/css/style.min.38d8ec3c7cca8185fe94ab7dc7ca79d69e14b78ca3c077807b2c32725df95c62.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="//localhost:8080/">
+                <span>dr@patched-atlas ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="//localhost:8080/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="//localhost:8080/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>NMAP Reference</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2019-11-08">November 8, 2019</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>2 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <ol>
+<li>nmap -sP <!-- raw HTML omitted -->: Simple ping scan to check host availability without port scanning.</li>
+<li>nmap -F <!-- raw HTML omitted -->: Fast scan of the 100 most common ports for a quick vulnerability assessment.</li>
+<li>nmap -sV <!-- raw HTML omitted -->: Service version scan to determine the version of services running on each port, great for OS and app fingerprinting.</li>
+<li>nmap -A <!-- raw HTML omitted -->: Aggressive scan combining OS detection, version detection, script scanning, and traceroute.</li>
+<li>nmap -sn <!-- raw HTML omitted -->: ICMP ping scan to discover hosts without port scanning.</li>
+<li>nmap -sT <!-- raw HTML omitted -->: TCP connect scan to check if ports are open by completing the 3-way handshake.</li>
+<li>nmap -sU <!-- raw HTML omitted -->: UDP scan to find open UDP ports, useful for services like DNS and SNMP.</li>
+<li>nmap -p- <!-- raw HTML omitted -->: Scan all ports (1-65535) on a target for comprehensive port scanning.</li>
+<li>nmap -O <!-- raw HTML omitted -->: Enable OS detection to determine the operating system running on the target host.</li>
+<li>nmap -sS <!-- raw HTML omitted -->: SYN scan to send SYN packets and analyze the responses to determine open ports.</li>
+<li>nmap -sX <!-- raw HTML omitted -->: XMAS scan to send TCP packets with the FIN, PSH, and URG flags set, useful for firewall evasion.</li>
+<li>nmap -sC <!-- raw HTML omitted -->: Scan with default scripts enabled to perform advanced vulnerability scanning and service detection.</li>
+<li>nmap -v <!-- raw HTML omitted -->: Verbose output to provide more detailed information during the scan.</li>
+<li>nmap -T&lt;0-5&gt; <!-- raw HTML omitted -->: Settiming template for the scan (higher is faster but less reliable).</li>
+<li>nmap -iL <!-- raw HTML omitted -->: Read targets from a file to perform scans.</li>
+</ol>
+<p>Further reading: &ldquo;Nmap Network Scanning&rdquo; by Gordon &ldquo;Fyodor&rdquo; Lyon</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>Copyright, Darren Richardson 2020-2024</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

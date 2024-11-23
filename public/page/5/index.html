@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta name="generator" content="Hugo 0.136.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+
+
+
+<title>Patched Atlas</title>
+<link rel="canonical" href="//localhost:1313/">
+<meta name="description" content="The Journey Starts with a Single Hack" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Patched Atlas" />
+<meta property="og:url" content="//localhost:1313/" />
+<meta property="og:description" content="The Journey Starts with a Single Hack" />
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/index.xml" title="Patched Atlas" />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/icofont/icofont.min.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<script src="/js/copy-code-block.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+        <header class="header-wrapper">
+    <div class="header">
+        <a class="site-title" href="//localhost:1313/">Patched Atlas</a>
+
+        <nav class="menu">
+            
+                <div class="menu-item">
+                    
+                        <a href="/posts/">Posts</a>
+                    
+                </div>
+            
+                <div class="menu-item">
+                    
+                        <a href="">About</a>
+                    
+                </div>
+            
+        </nav>
+    </div>
+</header>
+
+        <main class="main-wrapper">
+            <div class="main">
+                
+
+<div class="max-wrapper">
+    <div id="list-page">
+        
+        
+        
+            <section class="list-item">
+                <h1 class="title"><a href="/posts/2019-11-08-nmap-reference/">NMAP Reference</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="2019-11-08 00:00:00 &#43;0000 UTC">2019/11/08</time>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <div class="summary">
+                    
+                        <ol>
+<li>nmap -sP <!-- raw HTML omitted -->: Simple ping scan to check host availability without port scanning.</li>
+<li>nmap -F <!-- raw HTML omitted -->: Fast scan of the 100 most common ports for a quick vulnerability assessment.</li>
+<li>nmap -sV <!-- raw HTML omitted -->: Service version scan to determine the version of services running on each port, great for OS and app fingerprinting.</li>
+<li>nmap -A <!-- raw HTML omitted -->: Aggressive scan combining OS detection, version detection, script scanning, and traceroute.</li>
+<li>nmap -sn <!-- raw HTML omitted -->: ICMP ping scan to discover hosts without port scanning.</li>
+<li>nmap -sT <!-- raw HTML omitted -->: TCP connect scan to check if ports are open by completing the 3-way handshake.</li>
+<li>nmap -sU <!-- raw HTML omitted -->: UDP scan to find open UDP ports, useful for services like DNS and SNMP.</li>
+<li>nmap -p- <!-- raw HTML omitted -->: Scan all ports (1-65535) on a target for comprehensive port scanning.</li>
+<li>nmap -O <!-- raw HTML omitted -->: Enable OS detection to determine the operating system running on the target host.</li>
+<li>nmap -sS <!-- raw HTML omitted -->: SYN scan to send SYN packets and analyze the responses to determine open ports.</li>
+<li>nmap -sX <!-- raw HTML omitted -->: XMAS scan to send TCP packets with the FIN, PSH, and URG flags set, useful for firewall evasion.</li>
+<li>nmap -sC <!-- raw HTML omitted -->: Scan with default scripts enabled to perform advanced vulnerability scanning and service detection.</li>
+<li>nmap -v <!-- raw HTML omitted -->: Verbose output to provide more detailed information during the scan.</li>
+<li>nmap -T&lt;0-5&gt; <!-- raw HTML omitted -->: Settiming template for the scan (higher is faster but less reliable).</li>
+<li>nmap -iL <!-- raw HTML omitted -->: Read targets from a file to perform scans.</li>
+</ol>
+<p>Further reading: &ldquo;Nmap Network Scanning&rdquo; by Gordon &ldquo;Fyodor&rdquo; Lyon</p>
+                    
+                </div>
+            </section>
+        
+            <section class="list-item">
+                <h1 class="title"><a href="/posts/2011-11-29-linux-cheatsheet/">Linux Cheatsheet</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="2011-11-29 00:00:00 &#43;0000 UTC">2011/11/29</time>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <div class="summary">
+                    
+                        <h3 id="navigation-and-file-management">Navigation and File Management: <a href="#navigation-and-file-management" class="anchor">🔗</a></h3><ol>
+<li><strong>ls</strong> - List directory contents (<code>-l</code> for long format, <code>-a</code> for all files including hidden)</li>
+<li><strong>cd</strong> - Change directory (<code>..</code> for parent directory, <code>~</code> for home directory)</li>
+<li><strong>pwd</strong> - Print working directory</li>
+<li><strong>mkdir</strong> - Create a directory (<code>-p</code> to create parent directories)</li>
+<li><strong>rmdir</strong> - Remove an empty directory</li>
+<li><strong>rm</strong> - Remove files or directories (<code>-r</code> for recursive, <code>-f</code> for force)</li>
+<li><strong>cp</strong> - Copy files or directories (<code>-r</code> for recursive, <code>-i</code> for interactive)</li>
+<li><strong>mv</strong> - Move or rename files or directories</li>
+<li><strong>touch</strong> - Create an empty file or update file timestamps</li>
+<li><strong>find</strong> - Search for files in a directory hierarchy (<code>-name</code> for specifying filenames)</li>
+</ol>
+<h3 id="file-viewing-and-editing">File Viewing and Editing: <a href="#file-viewing-and-editing" class="anchor">🔗</a></h3><ol>
+<li><strong>cat</strong> - Concatenate and display file content</li>
+<li><strong>less</strong> - View file content interactively</li>
+<li><strong>head</strong> - Display the beginning of a file (<code>-n</code> for number of lines)</li>
+<li><strong>tail</strong> - Display the end of a file (<code>-n</code> for number of lines, <code>-f</code> for following)</li>
+<li><strong>nano</strong> - Simple text editor for file editing</li>
+</ol>
+<h3 id="text-manipulation">Text Manipulation: <a href="#text-manipulation" class="anchor">🔗</a></h3><ol>
+<li><strong>grep</strong> - Search text using patterns (<code>-i</code> for case insensitive, <code>-r</code> for recursive)</li>
+<li><strong>sed</strong> - Stream editor for text manipulation</li>
+<li><strong>awk</strong> - Text processing tool for pattern scanning and processing</li>
+<li><strong>cut</strong> - Select sections from each line of files (<code>-d</code> for delimiter, <code>-f</code> for fields)</li>
+<li><strong>sort</strong> - Sort lines of text files (<code>-n</code> for numerical sort, <code>-r</code> for reverse)</li>
+</ol>
+<h3 id="user-management">User Management: <a href="#user-management" class="anchor">🔗</a></h3><ol>
+<li><strong>whoami</strong> - Display the current user</li>
+<li><strong>sudo</strong> - Execute a command as the superuser</li>
+<li><strong>su</strong> - Switch user or become superuser</li>
+<li><strong>useradd</strong> - Add a new user</li>
+<li><strong>passwd</strong> - Change user password</li>
+<li><strong>usermod</strong> - Modify user account</li>
+<li><strong>groupadd</strong> - Create a new group</li>
+<li><strong>chown</strong> - Change file owner and group</li>
+<li><strong>chgrp</strong> - Changes group.</li>
+<li><strong>chmod</strong> - Changes file permissions</li>
+<li><strong>usermod</strong> - Modifies a user</li>
+<li><strong>userdel</strong> - Deletes a user</li>
+</ol>
+<h3 id="process-management">Process Management: <a href="#process-management" class="anchor">🔗</a></h3><ol>
+<li><strong>ps</strong> - Display current processes (<code>aux</code> for detailed information)</li>
+<li><strong>pspsps</strong> - Summons cats.</li>
+<li><strong>top</strong> - Display and manage running processes</li>
+<li><strong>kill</strong> - Terminate processes by ID or name (<code>-9</code> for forceful termination)</li>
+<li><strong>pgrep</strong> - Search for processes by name (<code>-l</code> for long listing)</li>
+</ol>
+<h3 id="system-information">System Information: <a href="#system-information" class="anchor">🔗</a></h3><ol>
+<li><strong>uname</strong> - Print system information (<code>-a</code> for all information)</li>
+<li><strong>df</strong> - Display disk space usage</li>
+<li><strong>du</strong> - Display directory space usage</li>
+<li><strong>free</strong> - Display amount of free and used memory in the system</li>
+<li><strong>lscpu</strong> - Display CPU information</li>
+</ol>
+<h3 id="network">Network: <a href="#network" class="anchor">🔗</a></h3><ol>
+<li><strong>ifconfig</strong> - Display or configure network interface parameters</li>
+<li><strong>ping</strong> - Test network connectivity</li>
+<li><strong>netstat</strong> - Display network connections, routing tables, interface statistics</li>
+<li><strong>ssh</strong> - Secure shell for remote login</li>
+<li><strong>scp</strong> - Securely copy files between hosts</li>
+<li><strong>curl</strong> - Transfer data from or to a server</li>
+</ol>
+<h3 id="package-management-debian-based-systems">Package Management (Debian-based systems): <a href="#package-management-debian-based-systems" class="anchor">🔗</a></h3><ol>
+<li><strong>apt-get</strong> - Package handling utility for installing, updating, and removing packages</li>
+<li><strong>dpkg</strong> - Package manager for Debian-based systems</li>
+<li><strong>apt-cache</strong> - Query APT cache</li>
+<li><strong>aptitude</strong> - High-level interface for package management</li>
+<li><strong>snap</strong> - Command-line interface for Snap packages</li>
+</ol>
+<h3 id="compression-and-archiving">Compression and Archiving: <a href="#compression-and-archiving" class="anchor">🔗</a></h3><ol>
+<li><strong>tar</strong> - Archive files (<code>-x</code> for extract, <code>-c</code> for create, <code>-z</code> for gzip compression)</li>
+<li><strong>gzip</strong> - Compress or decompress files</li>
+<li><strong>zip</strong> - Package and compress files</li>
+</ol>
+<h3 id="system-maintenance">System Maintenance: <a href="#system-maintenance" class="anchor">🔗</a></h3><ol>
+<li><strong>shutdown</strong> - Shut down or restart the system (<code>-h now</code> for immediate shutdown)</li>
+<li><strong>reboot</strong> - Reboot the system</li>
+<li><strong>date</strong> - Display or set the system date and time</li>
+<li><strong>crontab</strong> - Schedule commands to be executed periodically</li>
+<li><strong>uptime</strong> - Display how long the system has been running</li>
+</ol>
+                    
+                </div>
+            </section>
+        
+
+    </div>
+    
+
+<nav class="pagination">
+
+    
+    
+    
+    
+    
+        
+            
+            
+
+            
+                <a class="enabled" href="/">1</a>
+            
+
+        
+    
+        
+    
+        
+            
+                <span>··</span>
+            
+            
+
+            
+                <a class="enabled" href="/page/3/">3</a>
+            
+
+        
+    
+        
+            
+            
+
+            
+                <a class="enabled" href="/page/4/">4</a>
+            
+
+        
+    
+        
+            
+            
+
+            
+                <a class="enabled current" href="/page/5/">5</a>
+            
+
+        
+    
+
+</nav>
+</div>
+
+            </div>
+            <div class="side">
+                
+                    <div class="side-recent">
+    <h2 class="side-title">
+        <a href="/posts/">Recent Posts</a>
+    </h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/posts/2024-11-02-eu-and-ai/">EU vs AI</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2024-10-02-middlemen/">The position of Middlemen</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2023-05-11-worst-access-control/">The World&#39;s Least Convenient Access Control System - Part 1: Architecture</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2022-10-30-sensationalist-security-reporting/">Sensationalist Security Reporting</a>
+            </li>
+        
+            <li>
+                <a href="/posts/2022-09-30-interesting-web-traffic/">Interesting web traffic</a>
+            </li>
+        
+    </ul>
+</div>
+
+                
+                <div class="side-categories">
+    <h2>Categories</h2>
+    <hr />
+
+    <ul>
+        
+    </ul>
+</div>
+
+                <div class="side-tags">
+    <h2>Tags</h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/tags/infosec">infosec (2)</a>
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer-row">
+        
+            
+            
+                <a class="footer-item" href="//localhost:1313/posts/index.xml">
+                    Feed of Posts
+                    <i class="icofont-rss"></i>
+                </a>
+            
+        
+
+        
+    </div>
+
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Copyright, Darren Richardson 2024</a></span>
+                
+            
+        </div>
+    
+        <div class="footer-row">
+            
+                
+                    <span class="footer-item">Powered by <a href="https://gohugo.io">Hugo</a></span>
+                
+            
+                
+                    <span class="footer-item">Theme <a href="https://git.leafee98.com/leafee98/hugo-theme-flat.git">hugo-theme-flat</a></span>
+                
+            
+        </div>
+    
+</footer>
+
+    </body>
+</html>
