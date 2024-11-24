@@ -10,7 +10,7 @@ I get frustrated with development at times.
 
 This is the simple development loop:
 
-![dev-loop.png](/dev-loop.png)]
+![dev-loop.png](/dev-loop.png)
 
 This is rarely the way it works in reality, though I feel people would be surprised exactly what a one-person dev team can pull off. Just look at Stardew Valley.
 
