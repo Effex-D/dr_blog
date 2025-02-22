@@ -12,6 +12,10 @@ baseURL = "https://patched-atlas.fyi/"
     name = "about"
     weight = 1
     url = "about"
+  [[menu.header]]
+    name = "cv"
+    weight = 1
+    url = "cv"
 
 [params]
 description = "The Journey Starts with a Single Hack"
